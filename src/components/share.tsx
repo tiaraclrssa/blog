@@ -1,7 +1,7 @@
 import Link from "next/link";
 import 
 { IoLogoFacebook, IoLogoLinkedin, IoLogoTwitter, IoLogoWhatsapp } 
-from "react-icons/io";
+from "react-icons/io5";
 import { IconType } from "react-icons/lib";
 import CopyButton from "./copy";
 
