@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Wrapper from "@/components/wrapper";
-import { IBlog } from "@/types/blog";
-import { getBlogSlug } from "@/libs/blog";
-import { title } from "process";
+// import Wrapper from "@/components/wrapper";
+// import { IBlog } from "@/types/blog";
+// import { getBlogSlug } from "@/libs/blog";
+// import { title } from "process";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

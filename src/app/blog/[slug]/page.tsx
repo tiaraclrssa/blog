@@ -1,10 +1,9 @@
 import { getBlog, getBlogSlug } from "@/libs/blog"
 import { IBlog } from "@/types/blog"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { BLOCKS } from "@contentful/rich-text-types";
-import { Children } from "react";
-import { Options } from "@contentful/rich-text-react-renderer";
-import { title } from "process";
+// import { BLOCKS } from "@contentful/rich-text-types";
+// import { Children } from "react";
+// import { Options } from "@contentful/rich-text-react-renderer";
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
     const blog: IBlog = await getBlogSlug(params.slug);
@@ -27,6 +26,9 @@ export const generateStaticParams = async () => {
 
 export default async function BlogDetail({params}: {params: {slug: string} }){
 const blog: IBlog = await getBlogSlug(params.slug)
+// const blogNe: IBlog[] = await getBlogRecom(params.slug)
+
+
 
     return(
         <div className="flex-col px-[250px]">
