@@ -12,7 +12,7 @@ export default async function Home() {
     <RecomendationBlog blogs={data}/>
       {data.map((item) => {
         return (
-          <div key={item.fields.slug} className="bg-black rounded-3xl mt-10 h-[500px]">
+          <div key={item.fields.slug} className="bg-black rounded-3xl mt-10 h-[500px]" data-cy="blog-item">
               {item.fields.thumbnail && (
                 <img
                   src={item.fields.thumbnail.fields.file.url}

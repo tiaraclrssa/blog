@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import {FaLink, FaCheck} from "react-icons/fa6"
+import {FaLink, FaCheck} from "react-icons/fa"
 import { useCopyToClipboard } from "usehooks-ts"
 
 export default function CopyButton(){
